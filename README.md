@@ -25,31 +25,43 @@ No LLM or paid API is involved: the schedule comes entirely from the planner and
 
 ## Project structure
 
-```
-backend/
-  app/
-    main.py            FastAPI app, CORS
-    routes.py          REST endpoints
-    schemas.py         Pydantic request/response models
-    database.py        SQLAlchemy model + SQLite session
-    config.py          environment variables
-    data/              sample dataset (categories + destinations) and its documentation
-    planner/
-      knowledge_base.py  ISA hierarchy, property inheritance, facts, travel-time model
-      logic.py           unification + SLD resolution (Datalog subset)
-      htn.py             generic HTN planner: decomposition, backtracking, decomposition tree
-      travel_domain.py   tasks, methods and primitive operators (preconditions/effects)
-      constraints.py     time constraints and the independent itinerary validator
-      budget.py          cost calculations
-      itinerary.py       request -> pre-checks -> search -> validation -> explanations
-  tests/               pytest suite (knowledge/logic, planner, API)
-frontend/
-  src/
-    api/               axios client and TypeScript types
-    components/        form, day timeline, itinerary view, nav, status views
-    pages/             plan, saved list/detail, knowledge base
-    lib/format.ts      formatting helpers
-docs/ACADEMIC_NOTES.md how each AI concept is implemented, with pointers into the code
+```text
+Constraint-Aware-Travel-Itinerary-Generator-/
+├── backend/                                    Python API and planner
+│   ├── app/
+│   │   ├── main.py                             FastAPI app and CORS
+│   │   ├── routes.py                           REST endpoints
+│   │   ├── schemas.py                          Pydantic request/response models
+│   │   ├── database.py                         SQLAlchemy model and SQLite session
+│   │   ├── config.py                           Environment variables
+│   │   ├── data/                               Sample dataset and its documentation
+│   │   │   ├── categories.json                 Class hierarchy (ISA) and inherited properties
+│   │   │   └── destinations/                   Jaipur, Mysuru, Puducherry
+│   │   └── planner/
+│   │       ├── knowledge_base.py               ISA hierarchy, inheritance, facts, travel times
+│   │       ├── logic.py                        Unification and SLD resolution
+│   │       ├── htn.py                          Generic HTN planner with backtracking
+│   │       ├── travel_domain.py                Tasks, methods and primitive operators
+│   │       ├── constraints.py                  Time constraints and itinerary validator
+│   │       ├── budget.py                       Cost calculations
+│   │       └── itinerary.py                    Pre-checks, search, validation, explanations
+│   ├── tests/                                  Pytest suite (logic, planner, API)
+│   ├── requirements.txt
+│   └── .env.example
+├── frontend/                                   React user interface
+│   ├── src/
+│   │   ├── api/                                Axios client and TypeScript types
+│   │   ├── components/                         Form, day timeline, itinerary view, nav bar
+│   │   ├── pages/                              Plan, saved itineraries, knowledge base
+│   │   ├── lib/format.ts                       Formatting helpers
+│   │   ├── App.tsx                             Routes
+│   │   └── main.tsx                            Entry point
+│   ├── package.json
+│   └── .env.example
+├── docs/
+│   └── ACADEMIC_NOTES.md                       How each AI concept is implemented
+├── .gitignore
+└── README.md
 ```
 
 ## Running locally
@@ -60,12 +72,15 @@ Requirements: Python 3.11+ and Node.js 20+.
 
 ```bash
 cd backend
-python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env               # optional; defaults work for local use
+cp .env.example .env
 uvicorn app.main:app --reload --port 8000
 ```
+
+On Windows, activate the environment with `.venv\Scripts\activate` instead. Copying `.env.example` is optional;
+the defaults work for local use.
 
 API docs are then at http://localhost:8000/docs. Saved itineraries go to `backend/itineraries.db`.
 
@@ -80,9 +95,11 @@ API docs are then at http://localhost:8000/docs. Saved itineraries go to `backen
 ```bash
 cd frontend
 npm install
-cp .env.example .env               # sets VITE_API_BASE_URL=http://localhost:8000
+cp .env.example .env
 npm run dev
 ```
+
+The `.env` file sets `VITE_API_BASE_URL=http://localhost:8000`, the address of the backend.
 
 Open http://localhost:5173. For a production build: `npm run build` (output in `frontend/dist`).
 
