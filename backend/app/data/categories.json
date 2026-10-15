@@ -1,0 +1,93 @@
+{
+  "_comment": "Class (category) hierarchy shared by all destinations. Each class names its parent with 'isa'. 'properties' are single-valued and the most specific value wins; 'interests' accumulate down the hierarchy. See backend/app/data/README.md.",
+  "Attraction": {
+    "isa": null,
+    "properties": { "indoor": false, "default_duration": 60, "best_time": "any" },
+    "interests": []
+  },
+  "HeritageSite": {
+    "isa": "Attraction",
+    "properties": { "default_duration": 90 },
+    "interests": ["history"]
+  },
+  "Fort": {
+    "isa": "HeritageSite",
+    "properties": { "default_duration": 120, "walking_effort": "high" },
+    "interests": []
+  },
+  "Palace": {
+    "isa": "HeritageSite",
+    "properties": { "indoor": true },
+    "interests": ["culture"]
+  },
+  "Monument": {
+    "isa": "HeritageSite",
+    "properties": { "default_duration": 60 },
+    "interests": []
+  },
+  "HeritageWalk": {
+    "isa": "HeritageSite",
+    "properties": { "default_duration": 90, "best_time": "morning", "walking_effort": "high" },
+    "interests": ["culture"]
+  },
+  "PlaceOfWorship": {
+    "isa": "HeritageSite",
+    "properties": { "default_duration": 45, "dress_code": "modest clothing expected" },
+    "interests": ["spiritual"]
+  },
+  "Temple": {
+    "isa": "PlaceOfWorship",
+    "properties": { "footwear_removed": true },
+    "interests": []
+  },
+  "Church": {
+    "isa": "PlaceOfWorship",
+    "properties": { "default_duration": 30 },
+    "interests": []
+  },
+  "SpiritualCentre": {
+    "isa": "Attraction",
+    "properties": { "default_duration": 60, "silence_expected": true },
+    "interests": ["spiritual"]
+  },
+  "Museum": {
+    "isa": "Attraction",
+    "properties": { "indoor": true, "default_duration": 75 },
+    "interests": ["history", "art"]
+  },
+  "ArtGallery": {
+    "isa": "Museum",
+    "properties": {},
+    "interests": ["art"]
+  },
+  "NaturalSite": {
+    "isa": "Attraction",
+    "properties": { "default_duration": 60 },
+    "interests": ["nature"]
+  },
+  "Garden": {
+    "isa": "NaturalSite",
+    "properties": {},
+    "interests": []
+  },
+  "Lake": {
+    "isa": "NaturalSite",
+    "properties": { "default_duration": 45 },
+    "interests": []
+  },
+  "Beach": {
+    "isa": "NaturalSite",
+    "properties": { "best_time": "evening" },
+    "interests": []
+  },
+  "Zoo": {
+    "isa": "NaturalSite",
+    "properties": { "default_duration": 150, "walking_effort": "high" },
+    "interests": []
+  },
+  "Market": {
+    "isa": "Attraction",
+    "properties": { "default_duration": 60, "best_time": "evening" },
+    "interests": ["shopping", "culture"]
+  }
+}

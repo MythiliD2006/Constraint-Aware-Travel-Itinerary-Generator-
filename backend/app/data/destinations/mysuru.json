@@ -1,0 +1,94 @@
+{
+  "id": "mysuru",
+  "name": "Mysuru",
+  "region": "Karnataka",
+  "summary": "A compact palace city. Brindavan Gardens and Srirangapatna are 15-20 km out and need a half day.",
+  "base": { "name": "Near Mysuru railway station", "lat": 12.3100, "lon": 76.6460 },
+  "costs": {
+    "accommodation_per_room_night": { "budget": 1200, "standard": 2800, "comfort": 5500 },
+    "food_per_person_day": { "budget": 400, "standard": 750, "comfort": 1300 },
+    "cab_base_fare": 30,
+    "cab_rate_per_km": 16
+  },
+  "attractions": [
+    {
+      "id": "mysore_palace", "name": "Mysore Palace", "category": "Palace",
+      "lat": 12.3052, "lon": 76.6552,
+      "hours": [["10:00", "17:30"]], "closed_on": [],
+      "entry_fee": 120, "duration": 120,
+      "description": "Indo-Saracenic palace of the Wadiyar dynasty."
+    },
+    {
+      "id": "chamundi_temple", "name": "Chamundeshwari Temple", "category": "Temple",
+      "lat": 12.2724, "lon": 76.6710,
+      "hours": [["07:30", "14:00"], ["15:30", "18:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 75,
+      "interests": ["nature"],
+      "description": "Hilltop temple on Chamundi Hill with views of the city."
+    },
+    {
+      "id": "brindavan_gardens", "name": "Brindavan Gardens", "category": "Garden",
+      "lat": 12.4218, "lon": 76.5728,
+      "hours": [["06:30", "20:00"]], "closed_on": [],
+      "entry_fee": 50, "duration": 120,
+      "best_time": "evening",
+      "description": "Terraced gardens below the KRS dam; busiest in the evening."
+    },
+    {
+      "id": "st_philomena", "name": "St. Philomena's Church", "category": "Church",
+      "lat": 12.3209, "lon": 76.6584,
+      "hours": [["08:00", "17:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 40,
+      "description": "Neo-Gothic church with twin spires."
+    },
+    {
+      "id": "mysore_zoo", "name": "Mysuru Zoo", "category": "Zoo",
+      "lat": 12.3011, "lon": 76.6644,
+      "hours": [["08:30", "17:30"]], "closed_on": ["tuesday"],
+      "entry_fee": 100, "duration": 150,
+      "description": "Large, shaded zoological garden. Closed on Tuesdays in this dataset."
+    },
+    {
+      "id": "rail_museum", "name": "Rail Museum", "category": "Museum",
+      "lat": 12.3164, "lon": 76.6438,
+      "hours": [["09:30", "17:30"]], "closed_on": ["monday"],
+      "entry_fee": 50, "duration": 60,
+      "description": "Open-air collection of locomotives and royal carriages. Closed on Mondays in this dataset."
+    },
+    {
+      "id": "jaganmohan_palace", "name": "Jaganmohan Palace Art Gallery", "category": "ArtGallery",
+      "lat": 12.3070, "lon": 76.6505,
+      "hours": [["08:30", "17:00"]], "closed_on": [],
+      "entry_fee": 120, "duration": 75,
+      "description": "Paintings, including works by Raja Ravi Varma."
+    },
+    {
+      "id": "devaraja_market", "name": "Devaraja Market", "category": "Market",
+      "lat": 12.3108, "lon": 76.6520,
+      "hours": [["06:00", "20:30"]], "closed_on": [],
+      "entry_fee": 0, "duration": 60,
+      "description": "Flower, fruit and spice market."
+    },
+    {
+      "id": "karanji_lake", "name": "Karanji Lake", "category": "Lake",
+      "lat": 12.3038, "lon": 76.6720,
+      "hours": [["08:30", "17:30"]], "closed_on": [],
+      "entry_fee": 50, "duration": 60,
+      "description": "Lake with a walk-through aviary and butterfly park."
+    },
+    {
+      "id": "ranganathaswamy", "name": "Ranganathaswamy Temple, Srirangapatna", "category": "Temple",
+      "lat": 12.4255, "lon": 76.6788,
+      "hours": [["07:30", "13:00"], ["16:00", "20:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 60,
+      "description": "Island-town temple; closed in the afternoon."
+    },
+    {
+      "id": "daria_daulat", "name": "Daria Daulat Bagh", "category": "Palace",
+      "lat": 12.4171, "lon": 76.6948,
+      "hours": [["09:00", "17:00"]], "closed_on": ["friday"],
+      "entry_fee": 25, "duration": 60,
+      "description": "Tipu Sultan's summer palace with painted walls. Closed on Fridays in this dataset."
+    }
+  ]
+}

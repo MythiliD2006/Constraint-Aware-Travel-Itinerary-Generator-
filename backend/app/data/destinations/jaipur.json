@@ -1,0 +1,96 @@
+{
+  "id": "jaipur",
+  "name": "Jaipur",
+  "region": "Rajasthan",
+  "summary": "Forts, palaces and old-city bazaars. Hill forts sit north of the city, so they cost real travel time.",
+  "base": { "name": "MI Road (central hotel area)", "lat": 26.9170, "lon": 75.8050 },
+  "costs": {
+    "accommodation_per_room_night": { "budget": 1400, "standard": 3200, "comfort": 6500 },
+    "food_per_person_day": { "budget": 450, "standard": 850, "comfort": 1500 },
+    "cab_base_fare": 30,
+    "cab_rate_per_km": 18
+  },
+  "attractions": [
+    {
+      "id": "amber_fort", "name": "Amber Fort", "category": "Fort",
+      "lat": 26.9855, "lon": 75.8513,
+      "hours": [["08:00", "17:30"]], "closed_on": [],
+      "entry_fee": 100, "duration": 150,
+      "description": "Hilltop fort-palace complex; the ramp and courtyards take time to walk."
+    },
+    {
+      "id": "city_palace", "name": "City Palace", "category": "Palace",
+      "lat": 26.9258, "lon": 75.8237,
+      "hours": [["09:30", "17:00"]], "closed_on": [],
+      "entry_fee": 300, "duration": 120,
+      "description": "Royal residence with courtyards and museum galleries in the walled city."
+    },
+    {
+      "id": "hawa_mahal", "name": "Hawa Mahal", "category": "Palace",
+      "lat": 26.9239, "lon": 75.8267,
+      "hours": [["09:00", "17:00"]], "closed_on": [],
+      "entry_fee": 50, "duration": 45,
+      "description": "Five-storey screened facade overlooking the bazaar street."
+    },
+    {
+      "id": "jantar_mantar", "name": "Jantar Mantar", "category": "Monument",
+      "lat": 26.9248, "lon": 75.8246,
+      "hours": [["09:00", "16:30"]], "closed_on": [],
+      "entry_fee": 50, "duration": 60,
+      "interests": ["culture"],
+      "description": "18th-century masonry astronomical instruments."
+    },
+    {
+      "id": "albert_hall", "name": "Albert Hall Museum", "category": "Museum",
+      "lat": 26.9116, "lon": 75.8195,
+      "hours": [["09:00", "17:00"]], "closed_on": [],
+      "entry_fee": 40, "duration": 90,
+      "description": "State museum of decorative arts, textiles and archaeology."
+    },
+    {
+      "id": "nahargarh_fort", "name": "Nahargarh Fort", "category": "Fort",
+      "lat": 26.9373, "lon": 75.8155,
+      "hours": [["10:00", "17:30"]], "closed_on": [],
+      "entry_fee": 50, "duration": 90,
+      "interests": ["nature"],
+      "description": "Ridge-top fort with views over the city."
+    },
+    {
+      "id": "jal_mahal", "name": "Jal Mahal viewpoint", "category": "Lake",
+      "lat": 26.9535, "lon": 75.8462,
+      "hours": [["06:00", "19:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 30,
+      "interests": ["history"],
+      "description": "Palace in Man Sagar lake, seen from the roadside promenade."
+    },
+    {
+      "id": "birla_mandir", "name": "Birla Mandir", "category": "Temple",
+      "lat": 26.8921, "lon": 75.8155,
+      "hours": [["06:00", "12:00"], ["15:00", "20:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 40,
+      "description": "White marble temple; closed in the early afternoon."
+    },
+    {
+      "id": "galtaji", "name": "Galtaji Temple", "category": "Temple",
+      "lat": 26.9167, "lon": 75.8597,
+      "hours": [["06:00", "19:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 75,
+      "interests": ["nature"],
+      "description": "Temple complex built around natural spring-fed tanks in a gorge."
+    },
+    {
+      "id": "johari_bazaar", "name": "Johari Bazaar", "category": "Market",
+      "lat": 26.9220, "lon": 75.8265,
+      "hours": [["10:30", "20:30"]], "closed_on": [],
+      "entry_fee": 0, "duration": 75,
+      "description": "Jewellery and textile market inside the old city."
+    },
+    {
+      "id": "sisodia_garden", "name": "Sisodia Rani Garden", "category": "Garden",
+      "lat": 26.8939, "lon": 75.8714,
+      "hours": [["08:00", "18:00"]], "closed_on": [],
+      "entry_fee": 30, "duration": 45,
+      "description": "Terraced Mughal-style garden on the Agra road."
+    }
+  ]
+}

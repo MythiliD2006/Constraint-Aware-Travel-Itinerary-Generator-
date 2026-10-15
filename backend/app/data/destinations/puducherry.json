@@ -1,0 +1,94 @@
+{
+  "id": "puducherry",
+  "name": "Puducherry",
+  "region": "Puducherry (UT)",
+  "summary": "Walkable French Quarter by the sea. Auroville and Paradise Beach are outside town and take longer.",
+  "base": { "name": "White Town (French Quarter)", "lat": 11.9340, "lon": 79.8330 },
+  "costs": {
+    "accommodation_per_room_night": { "budget": 1300, "standard": 3000, "comfort": 6000 },
+    "food_per_person_day": { "budget": 450, "standard": 900, "comfort": 1600 },
+    "cab_base_fare": 30,
+    "cab_rate_per_km": 17
+  },
+  "attractions": [
+    {
+      "id": "promenade_beach", "name": "Promenade Beach", "category": "Beach",
+      "lat": 11.9325, "lon": 79.8358,
+      "hours": [["05:00", "21:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 60,
+      "description": "Seafront promenade along Goubert Avenue."
+    },
+    {
+      "id": "aurobindo_ashram", "name": "Sri Aurobindo Ashram", "category": "SpiritualCentre",
+      "lat": 11.9367, "lon": 79.8350,
+      "hours": [["08:00", "12:00"], ["14:00", "18:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 40,
+      "description": "Main ashram building and samadhi; visitors keep silence."
+    },
+    {
+      "id": "auroville", "name": "Auroville Visitors Centre & Matrimandir viewpoint", "category": "SpiritualCentre",
+      "lat": 12.0060, "lon": 79.8106,
+      "hours": [["09:00", "17:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 120,
+      "interests": ["culture"],
+      "description": "Visitors centre and the walk to the Matrimandir viewing point."
+    },
+    {
+      "id": "paradise_beach", "name": "Paradise Beach (via Chunnambar boat)", "category": "Beach",
+      "lat": 11.8869, "lon": 79.8195,
+      "hours": [["09:00", "17:00"]], "closed_on": [],
+      "entry_fee": 300, "duration": 180,
+      "best_time": "any",
+      "description": "Sandbar beach reached by backwater boat; the fee here is the boat ticket estimate."
+    },
+    {
+      "id": "pondy_museum", "name": "Puducherry Museum", "category": "Museum",
+      "lat": 11.9333, "lon": 79.8335,
+      "hours": [["09:40", "13:00"], ["14:00", "17:20"]], "closed_on": ["monday"],
+      "entry_fee": 10, "duration": 60,
+      "description": "Arikamedu finds, bronzes and French-era furniture. Closed on Mondays in this dataset."
+    },
+    {
+      "id": "sacred_heart", "name": "Basilica of the Sacred Heart", "category": "Church",
+      "lat": 11.9271, "lon": 79.8299,
+      "hours": [["06:00", "12:30"], ["16:00", "20:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 30,
+      "description": "Gothic-revival basilica with stained-glass panels."
+    },
+    {
+      "id": "manakula_vinayagar", "name": "Manakula Vinayagar Temple", "category": "Temple",
+      "lat": 11.9362, "lon": 79.8351,
+      "hours": [["05:45", "12:30"], ["16:00", "21:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 30,
+      "description": "Ganesha temple near the ashram; closed in the afternoon."
+    },
+    {
+      "id": "botanical_garden", "name": "Botanical Garden", "category": "Garden",
+      "lat": 11.9310, "lon": 79.8250,
+      "hours": [["10:00", "17:00"]], "closed_on": [],
+      "entry_fee": 20, "duration": 60,
+      "description": "Garden laid out in the French period, near the old railway station."
+    },
+    {
+      "id": "french_quarter_walk", "name": "French Quarter heritage walk", "category": "HeritageWalk",
+      "lat": 11.9330, "lon": 79.8345,
+      "hours": [["07:00", "19:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 90,
+      "description": "Self-guided walk through the grid of colonial streets."
+    },
+    {
+      "id": "ousteri_lake", "name": "Ousteri Lake", "category": "Lake",
+      "lat": 11.9560, "lon": 79.7430,
+      "hours": [["09:00", "17:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 90,
+      "description": "Wetland lake known for birdwatching."
+    },
+    {
+      "id": "goubert_market", "name": "Goubert Market", "category": "Market",
+      "lat": 11.9370, "lon": 79.8290,
+      "hours": [["07:00", "21:00"]], "closed_on": [],
+      "entry_fee": 0, "duration": 45,
+      "description": "Central market for produce, flowers and household goods."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "@fontsource/public-sans/400.css";
+@import "@fontsource/public-sans/500.css";
+@import "@fontsource/public-sans/600.css";
+@import "@fontsource/public-sans/700.css";
+
+/* Design tokens: forest green, warm white, charcoal. */
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-forest: #24513c;
+  --color-forest-deep: #183a2a;
+  --color-forest-soft: #e4ece5;
+  --color-canvas: #f6f7f2;
+  --color-paper: #ffffff;
+  --color-ink: #26292b;
+  --color-muted: #626862;
+  --color-line: #dde1d8;
+  --color-ochre: #9a6a14;
+  --color-ochre-soft: #f6eedc;
+  --color-brick: #a63d32;
+  --color-brick-soft: #f6e5e2;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: "tnum" 1;
+    line-height: 1.5;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-forest);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-paper border border-line rounded-lg;
+  }
+  .field-label {
+    @apply block text-sm font-medium text-ink mb-1.5;
+  }
+  .input {
+    @apply w-full rounded-md border border-line bg-paper px-3 py-2 text-sm text-ink
+      focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-3.5 py-2 text-sm font-medium
+      transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-forest text-white hover:bg-forest-deep;
+  }
+  .btn-quiet {
+    @apply border border-line bg-paper text-ink hover:border-forest/40 hover:bg-forest-soft;
+  }
+  .section-title {
+    @apply text-base font-semibold text-ink;
+  }
+}
+
+/* Waiting time on the timeline is drawn as a hatched gap. */
+.hatch {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 5px,
+    rgb(38 41 43 / 0.08) 5px 6px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
