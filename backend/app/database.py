@@ -3,7 +3,7 @@
 from datetime import datetime, timezone
 from typing import Iterator
 
-from sqlalchemy import JSON, DateTime, Integer, String, create_engine
+from sqlalchemy import JSON, DateTime, Integer, String, create_engine, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, sessionmaker
 
 from .config import DATABASE_URL
@@ -35,6 +35,13 @@ SessionLocal = sessionmaker(bind=engine, autoflush=False, expire_on_commit=False
 
 
 def init_db() -> None:
+    if engine.dialect.name == "postgresql":
+        # Serialize schema creation when multiple dev-server/reloader processes
+        # start together (common with PostgreSQL transaction poolers).
+        with engine.begin() as connection:
+            connection.execute(text("SELECT pg_advisory_xact_lock(73120491)"))
+            Base.metadata.create_all(connection)
+        return
     Base.metadata.create_all(engine)
 
 

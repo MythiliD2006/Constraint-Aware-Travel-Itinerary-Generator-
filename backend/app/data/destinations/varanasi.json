@@ -1,0 +1,23 @@
+{
+  "id": "varanasi",
+  "name": "Varanasi",
+  "region": "Uttar Pradesh",
+  "summary": "A historic river city of ghats, temples, old lanes and museums along the Ganga.",
+  "base": { "name": "Godowlia (central Varanasi)", "lat": 25.3109, "lon": 83.0107 },
+  "costs": {
+    "accommodation_per_room_night": { "budget": 1200, "standard": 3000, "comfort": 7000 },
+    "food_per_person_day": { "budget": 400, "standard": 800, "comfort": 1600 },
+    "cab_base_fare": 30,
+    "cab_rate_per_km": 17
+  },
+  "attractions": [
+    { "id": "kashi_vishwanath", "name": "Kashi Vishwanath Temple", "category": "Temple", "lat": 25.3109, "lon": 83.0107, "hours": [["04:00", "23:00"]], "closed_on": [], "entry_fee": 0, "duration": 60, "description": "Major temple in the old city; visitor access and queues can vary." },
+    { "id": "dashashwamedh_ghat", "name": "Dashashwamedh Ghat", "category": "HeritageSite", "lat": 25.3067, "lon": 83.0104, "hours": [["05:00", "21:00"]], "closed_on": [], "entry_fee": 0, "duration": 60, "best_time": "evening", "description": "One of the best-known riverfront ghats in Varanasi." },
+    { "id": "assi_ghat", "name": "Assi Ghat", "category": "HeritageSite", "lat": 25.2867, "lon": 83.0067, "hours": [["05:00", "20:00"]], "closed_on": [], "entry_fee": 0, "duration": 60, "description": "Southern riverfront ghat and a popular starting point for walks." },
+    { "id": "sarnath_museum", "name": "Sarnath Archaeological Museum", "category": "Museum", "lat": 25.3810, "lon": 83.0227, "hours": [["09:00", "17:00"]], "closed_on": ["friday"], "entry_fee": 5, "duration": 90, "description": "Museum near the Sarnath archaeological site; closed Fridays in this sample schedule." },
+    { "id": "dhamek_stupa", "name": "Dhamek Stupa", "category": "Monument", "lat": 25.3811, "lon": 83.0250, "hours": [["06:00", "17:00"]], "closed_on": [], "entry_fee": 25, "duration": 60, "description": "Large Buddhist stupa at the Sarnath archaeological complex." },
+    { "id": "bharat_kala_bhavan", "name": "Bharat Kala Bhavan Museum", "category": "Museum", "lat": 25.2677, "lon": 82.9913, "hours": [["10:30", "16:30"]], "closed_on": ["sunday", "monday"], "entry_fee": 20, "duration": 90, "description": "Art and archaeology museum on the Banaras Hindu University campus." },
+    { "id": "banarasi_silk_market", "name": "Banarasi Silk Market", "category": "Market", "lat": 25.3060, "lon": 83.0060, "hours": [["10:00", "19:00"]], "closed_on": ["sunday"], "entry_fee": 0, "duration": 60, "description": "Old-city shops and workshops associated with Banarasi weaving." },
+    { "id": "tulsi_manas_temple", "name": "Tulsi Manas Temple", "category": "Temple", "lat": 25.2860, "lon": 83.0000, "hours": [["05:30", "12:00"], ["15:00", "21:00"]], "closed_on": [], "entry_fee": 0, "duration": 45, "description": "Temple with inscriptions depicting verses from the Ramcharitmanas." }
+  ]
+}

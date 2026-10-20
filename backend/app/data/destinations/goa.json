@@ -1,0 +1,23 @@
+{
+  "id": "goa",
+  "name": "Goa",
+  "region": "Goa",
+  "summary": "A coastal mix of heritage districts, beaches, churches and markets across North and Central Goa.",
+  "base": { "name": "Panjim (Fontainhas area)", "lat": 15.4989, "lon": 73.8278 },
+  "costs": {
+    "accommodation_per_room_night": { "budget": 1600, "standard": 3800, "comfort": 8000 },
+    "food_per_person_day": { "budget": 500, "standard": 1000, "comfort": 1900 },
+    "cab_base_fare": 40,
+    "cab_rate_per_km": 20
+  },
+  "attractions": [
+    { "id": "basilica_bom_jesus", "name": "Basilica of Bom Jesus", "category": "Church", "lat": 15.5009, "lon": 73.9115, "hours": [["09:00", "18:30"]], "closed_on": [], "entry_fee": 0, "duration": 60, "description": "Baroque church in Old Goa, part of the area's historic church complex." },
+    { "id": "se_cathedral", "name": "Sé Cathedral", "category": "Church", "lat": 15.5030, "lon": 73.9110, "hours": [["09:00", "17:00"]], "closed_on": [], "entry_fee": 0, "duration": 60, "description": "Large Portuguese-era cathedral in Old Goa." },
+    { "id": "fort_aguada", "name": "Fort Aguada", "category": "Fort", "lat": 15.4922, "lon": 73.7737, "hours": [["09:30", "18:00"]], "closed_on": [], "entry_fee": 0, "duration": 90, "description": "Coastal fort and lighthouse complex overlooking the Arabian Sea." },
+    { "id": "fontainhas_walk", "name": "Fontainhas Heritage Walk", "category": "HeritageWalk", "lat": 15.5005, "lon": 73.8302, "hours": [["07:00", "18:30"]], "closed_on": [], "entry_fee": 0, "duration": 90, "description": "Walk through Panjim's Latin Quarter and its historic streets." },
+    { "id": "miramar_beach", "name": "Miramar Beach", "category": "Beach", "lat": 15.4778, "lon": 73.8071, "hours": [["05:00", "20:00"]], "closed_on": [], "entry_fee": 0, "duration": 60, "best_time": "evening", "description": "Urban beach near the Mandovi river mouth." },
+    { "id": "dona_paula", "name": "Dona Paula Viewpoint", "category": "NaturalSite", "lat": 15.4558, "lon": 73.8035, "hours": [["06:00", "19:00"]], "closed_on": [], "entry_fee": 0, "duration": 45, "description": "Coastal viewpoint over the meeting of the Mandovi and Zuari rivers." },
+    { "id": "mangeshi_temple", "name": "Shri Mangueshi Temple", "category": "Temple", "lat": 15.5032, "lon": 73.9865, "hours": [["06:00", "12:30"], ["14:00", "20:00"]], "closed_on": [], "entry_fee": 0, "duration": 60, "description": "Temple complex in Ponda with a distinctive Goan architectural style." },
+    { "id": "mapusa_market", "name": "Mapusa Market", "category": "Market", "lat": 15.5920, "lon": 73.8080, "hours": [["08:00", "18:00"]], "closed_on": ["sunday"], "entry_fee": 0, "duration": 75, "description": "Town market for local produce, spices and handicrafts." }
+  ]
+}

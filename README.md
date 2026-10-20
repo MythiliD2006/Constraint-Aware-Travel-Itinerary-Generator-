@@ -7,7 +7,7 @@ When no itinerary is possible it explains which constraint is in the way.
 
 No LLM or paid API is involved: the schedule comes entirely from the planner and a small local dataset.
 
-> The sample data (three destinations: Jaipur, Mysuru, Puducherry) is a curated set of **illustrative
+> The sample data (Jaipur, Mysuru, Puducherry, Agra, Goa, and Varanasi) is a curated set of **illustrative
 > estimates**. Prices, opening hours and travel times are not live data. See
 > [`backend/app/data/README.md`](backend/app/data/README.md).
 
@@ -36,7 +36,7 @@ Constraint-Aware-Travel-Itinerary-Generator-/
 │   │   ├── config.py                           Environment variables
 │   │   ├── data/                               Sample dataset and its documentation
 │   │   │   ├── categories.json                 Class hierarchy (ISA) and inherited properties
-│   │   │   └── destinations/                   Jaipur, Mysuru, Puducherry
+│   │   │   └── destinations/                   Jaipur, Mysuru, Puducherry, Agra, Goa, Varanasi
 │   │   └── planner/
 │   │       ├── knowledge_base.py               ISA hierarchy, inheritance, facts, travel times
 │   │       ├── logic.py                        Unification and SLD resolution
@@ -127,7 +127,7 @@ pytest
 
 ## Limitations
 
-- Only three sample destinations with 11 attractions each; all values are estimates.
+- Six sample destinations with curated attraction data; all values are estimates.
 - Travel time is a straight-line estimate (x1.35 road factor, fixed average speed), not real routing or traffic.
 - One fixed base per destination; the stay is not chosen or located by the planner.
 - The planner looks for a *feasible* itinerary guided by a heuristic, not an optimal one.

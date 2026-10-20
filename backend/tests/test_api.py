@@ -35,7 +35,9 @@ def client():
 def test_health_and_destinations(client):
     assert client.get("/api/health").json() == {"status": "ok"}
     destinations = client.get("/api/destinations").json()
-    assert {d["id"] for d in destinations} == {"jaipur", "mysuru", "puducherry"}
+    assert {d["id"] for d in destinations} == {
+        "agra", "goa", "jaipur", "mysuru", "puducherry", "varanasi"
+    }
 
 
 def test_destination_detail_shows_inherited_properties(client):
@@ -43,7 +45,7 @@ def test_destination_detail_shows_inherited_properties(client):
     birla = next(a for a in data["attractions"] if a["id"] == "birla_mandir")
     assert birla["lineage"][0] == "Temple"
     assert birla["properties"]["footwear_removed"] == {"value": True, "source": "Temple"}
-    assert client.get("/api/destinations/goa").status_code == 404
+    assert client.get("/api/destinations/unknown-city").status_code == 404
 
 
 def test_plan_endpoint(client):

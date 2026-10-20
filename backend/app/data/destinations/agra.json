@@ -1,0 +1,23 @@
+{
+  "id": "agra",
+  "name": "Agra",
+  "region": "Uttar Pradesh",
+  "summary": "Mughal architecture, riverside gardens and old-city markets, with the Taj Mahal as the centerpiece.",
+  "base": { "name": "Taj East Gate area", "lat": 27.1690, "lon": 78.0430 },
+  "costs": {
+    "accommodation_per_room_night": { "budget": 1500, "standard": 3500, "comfort": 7500 },
+    "food_per_person_day": { "budget": 450, "standard": 900, "comfort": 1700 },
+    "cab_base_fare": 35,
+    "cab_rate_per_km": 18
+  },
+  "attractions": [
+    { "id": "taj_mahal", "name": "Taj Mahal", "category": "Monument", "lat": 27.1751, "lon": 78.0421, "hours": [["06:00", "18:30"]], "closed_on": ["friday"], "entry_fee": 250, "duration": 150, "description": "Mughal-era mausoleum and gardens on the Yamuna riverfront; closed Fridays in this sample schedule." },
+    { "id": "agra_fort", "name": "Agra Fort", "category": "Fort", "lat": 27.1795, "lon": 78.0211, "hours": [["06:00", "18:00"]], "closed_on": [], "entry_fee": 50, "duration": 120, "description": "Historic Mughal fort complex overlooking the Yamuna." },
+    { "id": "itmad_ud_daula", "name": "Itmad-ud-Daula's Tomb", "category": "Monument", "lat": 27.1929, "lon": 78.0347, "hours": [["06:00", "18:00"]], "closed_on": [], "entry_fee": 30, "duration": 75, "interests": ["art"], "description": "Riverside marble tomb often noted for its detailed inlay work." },
+    { "id": "mehtab_bagh", "name": "Mehtab Bagh", "category": "Garden", "lat": 27.1797, "lon": 78.0400, "hours": [["06:00", "18:00"]], "closed_on": [], "entry_fee": 25, "duration": 60, "best_time": "evening", "description": "Garden across the river with views toward the Taj Mahal." },
+    { "id": "akbar_tomb", "name": "Akbar's Tomb, Sikandra", "category": "Monument", "lat": 27.2205, "lon": 77.9508, "hours": [["06:00", "18:00"]], "closed_on": [], "entry_fee": 30, "duration": 90, "description": "Mughal-era tomb complex set within landscaped grounds." },
+    { "id": "jama_masjid_agra", "name": "Jama Masjid", "category": "PlaceOfWorship", "lat": 27.1828, "lon": 78.0140, "hours": [["07:00", "18:00"]], "closed_on": [], "entry_fee": 0, "duration": 45, "description": "Historic congregational mosque opposite Agra Fort." },
+    { "id": "kinari_bazaar", "name": "Kinari Bazaar", "category": "Market", "lat": 27.1840, "lon": 78.0165, "hours": [["10:00", "20:00"]], "closed_on": ["sunday"], "entry_fee": 0, "duration": 60, "description": "Old-city market lanes known for textiles, wedding goods and crafts." },
+    { "id": "chini_ka_raza", "name": "Chini ka Rauza", "category": "Monument", "lat": 27.1975, "lon": 78.0376, "hours": [["06:00", "18:00"]], "closed_on": [], "entry_fee": 0, "duration": 45, "description": "Smaller riverside mausoleum noted for its tile decoration." }
+  ]
+}
